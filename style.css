@@ -83,7 +83,7 @@ header {
     padding-left: 28%;
     padding-right: 28%;
     background: rgba(179, 242, 247);
-    background-image: url(/images/bg.jpeg);
+    background-image: url(images/bg.jpeg);
     background-blend-mode: multiply;
     background-size: no-repeat;
     background-position: center;
@@ -274,7 +274,7 @@ h1 {
     display: flex;
     padding-right: 16%;
     background: rgba(179, 242, 247);
-    background-image: url(/images/bg.jpeg);
+    background-image: url(images/bg.jpeg);
     background-blend-mode: multiply;
     background-size: no-repeat;
     background-position: center;
