@@ -1,0 +1,550 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    cursor: context-menu;
+}
+
+body {
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Assistant', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.header_conteiner {
+    display: flex;
+    flex-direction: row-reverse;
+    max-height: fit-content;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 0px 1px lightgray;
+    justify-content: space-between;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.user {
+    display: flex;
+    flex-direction: row-reverse;
+    grid-gap: 1.5rem;
+    max-width: fit-content;
+}
+
+.profile_photo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.name {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+}
+
+.navbar {
+    display: flex;
+    max-width: fit-content;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    grid-gap: 1.5625rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li:hover,
+.name:hover {
+    scale: 1.1;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.title_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 28%;
+    padding-right: 28%;
+    background: rgba(179, 242, 247);
+    background-image: url(/images/bg.jpeg);
+    background-blend-mode: multiply;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title_box p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    margin-top: 2.5rem;
+    font-weight: 900;
+}
+
+.stack_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    box-shadow: 0px 1px lightgray;
+    padding-left: 16%;
+    padding-right: 16%;
+}
+
+.stacks {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.stacks img {
+    width: 80px;
+}
+
+.info_box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    grid-gap: 1rem;
+}
+
+.info_photo {
+    max-width: 150px;
+}
+
+.info_photo img {
+    max-width: 100%;
+}
+
+.info p {
+    padding-bottom: 1rem;
+}
+
+.cv_box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #2f2e2e;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pic_pos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+}
+
+.pic_pos img {
+    max-width: 75px;
+    rotate: 330deg;
+}
+
+.cv_text {
+    max-width: 60%;
+    color: #eeeeee;
+}
+
+.cv_text h2 {
+    margin-bottom: 1.25rem;
+}
+
+.cv_text p {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.25rem;
+}
+
+.cv_text button img {
+    width: 1rem;
+}
+
+.cv_text button {
+    background-color: #1ae0eb;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: scale 0.15s;
+}
+
+.cv_text button:hover {
+    scale: 1.08;
+}
+
+.job_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+}
+
+.job_box h2 {
+    margin-top: 50px;
+}
+
+.job_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.job_grid article {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    max-width: 260px;
+    min-width: 165px;
+}
+
+.job_grid article img {
+    width: 100%;
+    min-height: 156px;
+    height: 40%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.job_grid article h3 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    margin: 20px;
+}
+
+.job_grid article p {
+    margin: 0 20px 20px;
+    text-align: center;
+}
+
+.job_grid article button {
+    width: fit-content;
+    margin: 0 20px 20px;
+    align-self: center;
+    background-color: #1ae0eb;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: scale 0.15s;
+}
+
+.job_grid article button:hover {
+    scale: 1.08;
+}
+
+.contact_box {
+    display: flex;
+    padding-right: 16%;
+    background: rgba(179, 242, 247);
+    background-image: url(/images/bg.jpeg);
+    background-blend-mode: multiply;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cotnact_wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    width: 350px;
+    margin: 40px 0px 50px 0px;
+}
+
+
+.contact_text h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact_text p {
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.cotnact_wrap form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.cotnact_wrap form label {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.cotnact_wrap form input {
+    height: 1.6rem;
+    font-size: 1.25rem;
+    border: none;
+    border-bottom: 2.5px solid rgb(180, 178, 178);
+}
+
+.cotnact_wrap form input::placeholder,
+.cotnact_wrap form textarea::placeholder {
+    font-size: 0.95rem;
+    font-weight: 300;
+    font-family: 'Assistant', sans-serif;
+    padding-right: 5px;
+}
+
+.cotnact_wrap form textarea {
+    height: 5rem;
+    font-size: 1.25rem;
+    border: none;
+    border-bottom: 3px solid rgb(180, 178, 178);
+}
+
+.cotnact_wrap form button {
+    border: none;
+    background-color: #1ae1e8;
+    width: 80px;
+    height: 40px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: scale 0.2s, background-color 0.2s;
+    margin-top: 15px;
+}
+
+.cotnact_wrap form button:hover {
+    scale: 1.08;
+    background-color: #1a52eb;
+}
+
+.footer_box {
+    display: flex;
+    background-color: #2f2e2e;
+    min-height: 100px;
+    align-items: center;
+    padding-left: 16%;
+    padding-right: 16%;
+    justify-content: center;
+    max-height: fit-content;
+
+}
+
+.footer_box_content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer_box_content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+    min-width: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer_box_content img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.footer_box_content span {
+    color: #e2e2e2;
+    font-size: 1rem;
+}
+
+.footer_box_content a {
+    text-decoration: none;
+    color: #e2e2e2;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:390px) {
+    header {
+        display: none;
+    }
+
+    .title_box {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .stack_box {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .stacks img {
+        width: 44px;
+    }
+
+    .info_photo {
+        max-width: 100px;
+    }
+
+    .info_box {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-left: 8%;
+        padding-right: 8%;
+        align-items: center;
+        grid-gap: 0;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info h2 {
+        margin-bottom: 1rem;
+    }
+
+    .cv_box {
+        flex-direction: column;
+        padding-left: 8%;
+        padding-right: 8%;
+        align-items: center;
+    }
+
+    .cv_text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .pic_pos img {
+        max-width: 50px;
+    }
+
+    .cv_text h2 {
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .job_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact_box {
+        padding-right: 8%;
+    }
+
+}
+
+@media screen and (min-width:391px) and (max-width:615px) {
+    header {
+        display: none;
+    }
+
+    .title_box {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .stack_box {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .stacks img {
+        width: 55px;
+    }
+
+    .info_photo {
+        max-width: 100px;
+    }
+
+    .info_box {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-left: 8%;
+        padding-right: 8%;
+        align-items: center;
+        grid-gap: 0;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info h2 {
+        margin-bottom: 1rem;
+    }
+
+    .cv_box {
+        flex-direction: column;
+        padding-left: 8%;
+        padding-right: 8%;
+        align-items: center;
+    }
+
+    .cv_text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .pic_pos img {
+        max-width: 50px;
+    }
+
+    .cv_text h2 {
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .job_grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .contact_box {
+        padding-right: 8%;
+    }
+
+}
