@@ -181,6 +181,7 @@ h1 {
 
 .cv_text h2 {
     margin-bottom: 1.25rem;
+    text-align: center;
 }
 
 .cv_text p {
@@ -189,21 +190,23 @@ h1 {
     line-height: 1.25rem;
 }
 
-.cv_text button img {
-    width: 1rem;
+.cv_text a img {
+    width: 20px;
+    top: 8px;
+    right: 5px;
+    position: absolute;
 }
 
-.cv_text button {
+.cv_text a {
     background-color: #1ae0eb;
     border: none;
     border-radius: 20px;
-    padding: 7px 15px;
+    padding: 7px 20px;
     cursor: pointer;
     transition: scale 0.15s;
-}
-
-.cv_text button:hover {
-    scale: 1.08;
+    text-decoration: none;
+    color: #2f2e2e;
+    position: relative;
 }
 
 .job_box {
@@ -252,6 +255,14 @@ h1 {
     margin: 20px;
 }
 
+.links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0 30px 0;
+}
+
 .job_grid article p {
     margin: 0 20px 20px;
     text-align: center;
@@ -259,8 +270,6 @@ h1 {
 
 .job_grid article a {
     width: fit-content;
-    margin: 0 20px 20px;
-    align-self: center;
     background-color: #1ae0eb;
     color: black;
     font-size: 0.9rem;
@@ -270,6 +279,7 @@ h1 {
     cursor: pointer;
     transition: scale 0.15s;
     text-decoration: none;
+    text-align: center;
 }
 
 .job_grid article a:hover {
@@ -404,6 +414,13 @@ h1 {
     font-size: 1rem;
 }
 
+.rights {
+    background-color: rgba(54, 54, 54, 0.856);
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width:390px) {
     header {
         display: none;
@@ -523,6 +540,7 @@ h1 {
         margin-bottom: 1rem;
     }
 
+
     .cv_box {
         flex-direction: column;
         padding-left: 8%;
@@ -546,11 +564,17 @@ h1 {
 
     .job_grid {
         grid-template-columns: repeat(2, 1fr);
-
     }
 
     .contact_box {
         padding-right: 8%;
     }
 
+}
+
+@media screen and (max-width:710px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
 }
