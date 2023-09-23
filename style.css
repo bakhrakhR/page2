@@ -273,7 +273,6 @@ h1 {
     background-color: #1ae0eb;
     color: black;
     font-size: 0.9rem;
-    border: 0.5px solid black;
     border-radius: 20px;
     padding: 5px 15px;
     cursor: pointer;
@@ -419,6 +418,10 @@ h1 {
     color: #eeeeee;
     display: flex;
     justify-content: center;
+}
+
+#js-part {
+    margin-top: -50px;
 }
 
 @media screen and (max-width:390px) {
