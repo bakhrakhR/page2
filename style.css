@@ -236,9 +236,9 @@ h1 {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    min-height: 350px;
     max-width: 260px;
     min-width: 165px;
+    height: 400px;
 }
 
 .job_grid article img {
